@@ -49,7 +49,7 @@ func (sch *School) PayTeacherSalary(teacher *Teacher.Teacher, amount float64) ma
 
 		if (val.FirstName == teacher.FirstName) && (val.LastName == teacher.LastName) {
 			temp = Teacher.Teacher{val.FirstName, val.LastName, val.CourseName,
-				amount, val.GradeLevel, val.StudentList, val.Result}
+				amount, val.GradeLevel, val.StudentList}
 			sch.TeachersList[ind] = temp
 		}
 
